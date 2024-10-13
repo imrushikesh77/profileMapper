@@ -4,7 +4,7 @@ import { MapPin, Phone, Heart, ArrowLeft, Loader } from 'lucide-react';
 import Map from './Map';
 
 const fetchProfile = async (id) => {
-  const response = await fetch(`http://localhost:3000/api/profile/${id}`);
+  const response = await fetch(`https://profilemapper.onrender.com/api/profile/${id}`);
   if (!response.ok) {
     throw new Error('Profile not found');
   }

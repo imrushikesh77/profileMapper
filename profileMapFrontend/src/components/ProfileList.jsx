@@ -6,7 +6,7 @@ import Map from './Map'
 import { Loader } from 'lucide-react'
 
 const fetchProfiles = async () => {
-  const response = await fetch('http://localhost:3000/api/profiles');
+  const response = await fetch('https://profilemapper.onrender.com/api/profiles');
   if (!response.ok) {
     throw new Error('Failed to fetch profiles');
   }

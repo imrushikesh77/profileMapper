@@ -11,7 +11,7 @@ function SearchFilter({ searchTerm, setSearchTerm, filterCriteria, setFilterCrit
     setLoading(true); // Start loading
     setError(null); // Reset error state
     try {
-      const response = await fetch('http://localhost:3000/api/locations'); // Adjust this URL according to your backend
+      const response = await fetch('https://profilemapper.onrender.com/api/locations'); // Adjust this URL according to your backend
       if (!response.ok) {
         throw new Error('Failed to fetch locations');
       }
